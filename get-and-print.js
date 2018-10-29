@@ -9,7 +9,6 @@ function getAndPrintHTML () {
 
   https.get(requestOptions, function (response) {
     response.on('data', function (chunk) {
-      console.log("im  here");
       data += chunk;
     });
     response.on('end', function () {
